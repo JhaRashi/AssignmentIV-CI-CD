@@ -10,8 +10,8 @@ pipeline {
         }
         stage('Build and Run Application') {
             steps {
-                sh 'javac -d src/IVJavaApplicationSum.java'
-                sh'java -cp bin/IVJavaApplicationSum JavaApplicationSum'
+                sh 'javac -d src/IV/JavaApplicationSum.java'
+                sh'java -cp bin/IV/JavaApplicationSum JavaApplicationSum'
             }
         }
     }
