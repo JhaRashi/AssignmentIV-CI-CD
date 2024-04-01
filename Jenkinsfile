@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build and Run Application') {
             steps {
-                sh'java -cp bin JavaApplicationSum'
+                sh'java bin JavaApplicationSum'
             }
         }
     }
