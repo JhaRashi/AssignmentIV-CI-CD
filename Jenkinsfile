@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build and Run Application') {
             steps {
-                sh 'javac -d bin src/*.java && java -cp bin JavaApplicationSum'
+                sh 'javac -d bin src/* JavaApplicationSum.java && java -cp bin JavaApplicationSum'
             }
         }
     }
