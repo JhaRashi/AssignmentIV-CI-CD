@@ -8,10 +8,10 @@ pipeline {
                 git branch: 'develop', url: 'https://github.com/JhaRashi/AssignmentIV-CI-CD.git'
             }
         }
-
         stage('Build and Run Application') {
             steps {
-                sh 'javac -d bin src/* JavaApplicationSum.java && java -cp bin JavaApplicationSum'
+                sh 'javac -d bin src/* JavaApplicationSum.java'
+                sh'java -cp bin JavaApplicationSum'
             }
         }
     }
